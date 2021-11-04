@@ -25,7 +25,7 @@
             break;
 
         case "ActualizarArt":
-            $datos=$Articulos->Insert_Articulos($body["ID"],$body["Descripcion"],$body["Unidad"],$body["Costo"],$body["Precio"],$body["Aplica_ISV"],$body["Porcentaje_ISV"]);
+            $datos=$Articulos->actualizar_articulo($body["ID"],$body["Descripcion"],$body["Unidad"],$body["Costo"],$body["Precio"],$body["Aplica_ISV"],$body["Porcentaje_ISV"]);
             echo json_encode("ARTICULO ACTUALIZADO");
             break;    
         case "EliminarArt":
