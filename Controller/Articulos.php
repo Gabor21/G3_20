@@ -20,12 +20,12 @@
             echo json_encode($datos);
             break;
         case "InsertarArt":
-            $datos=$Articulos->Insert_articulo($body["ID"],$body["Descripcion"],$body["Unidad"],$body["Costo"],$body["Precio"],$body["Aplica_ISV"],$body["Porcentaje_ISV"]);
+            $datos=$Articulos->Insert_articulo($body["ID_socio"],$body["Descripcion"],$body["Unidad"],$body["Costo"],$body["Precio"],$body["Aplica_ISV"],$body["Porcentaje_ISV"]);
             echo json_encode("ARTICULO AGREGADO");
             break;
 
         case "ActualizarArt":
-            $datos=$Articulos->actualizar_articulo($body["ID"],$body["Descripcion"],$body["Unidad"],$body["Costo"],$body["Precio"],$body["Aplica_ISV"],$body["Porcentaje_ISV"]);
+            $datos=$Articulos->actualizar_articulo($body["ID_socio"],$body["Descripcion"],$body["Unidad"],$body["Costo"],$body["Precio"],$body["Aplica_ISV"],$body["Porcentaje_ISV"]);
             echo json_encode("ARTICULO ACTUALIZADO");
             break;    
         case "EliminarArt":
