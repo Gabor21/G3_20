@@ -19,7 +19,7 @@
         }
         public function set_names()
         {
-            return $this->query("SET NAMES 'utf8'");
+            return $this->bdh->query("SET NAMES 'utf8'");
         }
 
     }   
